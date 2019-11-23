@@ -4,7 +4,7 @@ FROM ubuntu:16.04
 RUN apt-get update -y
 
 # Install Python Setuptools
-RUN sudo apt-get install -y python-setuptools git telnet curl
+RUN apt-get install -y python-setuptools git telnet curl
 
 # Install pip
 RUN easy_install pip
