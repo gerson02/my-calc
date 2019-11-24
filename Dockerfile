@@ -1,12 +1,12 @@
 FROM ubuntu:16.04 
 
-RUN apt-get install sudo -y
+RUN su
 
 # Update packages
-RUN sudo apt-get update -y
+RUN apt-get update -y
 
 # Install Python Setuptools
-RUN sudo apt-get install python-setuptools git telnet curl
+RUN apt-get install python-setuptools git telnet curl
 
 # Install pip
 RUN sudo easy_install pip
