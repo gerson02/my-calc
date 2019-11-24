@@ -3,6 +3,8 @@ FROM ubuntu:16.04
 # Update packages
 RUN apt-get update -y
 
+RUN apt-get upgrade
+
 # Install Python Setuptools
 RUN apt-get install -y python-setuptools git telnet curl
 
