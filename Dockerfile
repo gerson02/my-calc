@@ -1,7 +1,5 @@
 FROM ubuntu:16.04 
 
-RUN su - 
-
 RUN apt-get install sudo -y
 
 # Update packages
