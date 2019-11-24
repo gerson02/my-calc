@@ -6,7 +6,7 @@ RUN apt-get update -y
 RUN apt-get upgrade
 
 # Install Python Setuptools
-RUN apt-get install -y python-setuptools git telnet curl
+RUN apt-get install python-setuptools git telnet curl
 
 # Install pip
 RUN easy_install pip
